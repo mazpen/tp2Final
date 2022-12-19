@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size:large;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main{
+    background-color: rgb(41, 98, 37);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#P1, #P2, #P3, #P4, #P5{
+    padding-top: 60px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+
+/*ENTETE*/
+.entete img{
+    height: 40px;
+    width: 200px;
+}
+
+.entete section{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.entete h1{
+    font-family: 'Anton', sans-serif;
+}
+
+nav{
+    background-color: rgb(35, 17, 0);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    border: 1px solid yellow;
+    color: yellow;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+.entete{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 160px;
+    color: black;
+}
+    
+#main, .entete{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+/*FORM*/
+form{
+width: 40vw;
+background-color: lightgray;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+fieldset{
+background-color:rgb(255, 202, 127);
+}
+
+.colonne{
+flex: 1 0 40%;
+}
+
+.colonne:nth-of-type(1){
+background-color: burlywood;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+
+/*TABLEAU*/
+table{
+border : 1px solid  rgb(0, 0, 0);
+border-collapse: collapse;
+color: #ffffff;
+font-size: large;
+margin: 0 auto;
+width: 600px;
+}	
+
+caption{
+border : 1px solid  #333;
+background-color: black;
+color: #ffffff;
+font-size: larger;
+padding: 10px;
+}
+
+th{
+background-color: rgb(146, 146, 146);
+color: #ffffff;
+border : 1px solid  #333;
+padding: 5px;
+text-align: center;
+}
+
+td[class]:hover{
+outline: 1px solid rgb(28, 92, 26);
+}
+
+
+/*ARTICLE*/
+#article{
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3{
+    padding: 20px;
+}
+
+#article img{
+    float: left;
+    
+}
+
+#article p{
+    width: 800px;
+    float: right;
+    vertical-align: top;
+
+}
+
+
+/*GALERIE*/
+figure{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    
+}
+
+figcaption{
+    width: 270px;
+    font-style: italic;
+    font-size: smaller;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+img{
+   width: auto;
+   height: 270px;
+   transition: all 0.5s ease;
+}
+
+img:hover{
+    transform: scale(2);
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(35, 17, 0);
+    color: white;
+    height: 300px;
+    display: flex;
+    flex: 0 1 20%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Bfooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+input[type="text"]{
+    margin-top: 10px;
+    display: inline-block;
+    color: black;
+    border: 1px dotted white;
+}
